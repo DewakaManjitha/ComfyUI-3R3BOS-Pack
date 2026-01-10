@@ -18,7 +18,9 @@ Streamline your workflow with smart input management and zero-latency scrubbing.
 
 ## Overview
 
-The **Image Comparer Slider** addresses the clutter of traditional comparison workflows.
+The **Image Comparer Slider** addresses the clutter of traditional comparison workflows. **It is the perfect tool for users who rely heavily on Refiners and Upscalers**, allowing you to check subtle differences instantly.
+
+It replaces manual wiring and gallery reloading with a single, intelligent node that adapts to your graph.
 
 | Core Capabilities | |
 | :--- | :--- |
@@ -32,6 +34,8 @@ The **Image Comparer Slider** addresses the clutter of traditional comparison wo
 ## Demo
 
 https://github.com/user-attachments/assets/4fa94f00-4c20-4478-9fbd-3ca0467015da
+
+https://github.com/user-attachments/assets/b46022a7-f60f-417d-9e4b-d4306e893815
 
 ---
 
