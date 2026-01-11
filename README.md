@@ -10,7 +10,7 @@
 **A seamless, high-performance image comparison node designed for efficiency.**
 Streamline your workflow with smart input management and zero-latency scrubbing.
 
-[View Demo](#demo) — [Installation](#installation) — [Documentation](#usage)
+[View Demo](#demo) — [Installation](#installation) 
 
 </div>
 
@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/b46022a7-f60f-417d-9e4b-d4306e893815
 
 ---
 
-## Installation
+
 
 ### Option A: ComfyUI Manager
 The recommended way to install.
@@ -49,7 +49,7 @@ The recommended way to install.
 
 ### Option B: Manual Clone
 To install via terminal:
-
+## Installation
 ```bash
 cd ComfyUI/custom_nodes/
 git clone [https://github.com/3R3BOS/ComfyUI-Image_Comparer_Slider.git](https://github.com/3R3BOS/ComfyUI-Image_Comparer_Slider.git)
