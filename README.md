@@ -68,4 +68,4 @@ To install via terminal:
 
 ```bash
 cd ComfyUI/custom_nodes/
-git clone [https://github.com/3R3BOS/ComfyUI-3R3BOS-Pack.git](https://github.com/3R3BOS/ComfyUI-3R3BOS-Pack.git)
+git clone https://github.com/3R3BOS/ComfyUI-3R3BOS-Pack.git
