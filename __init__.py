@@ -1,15 +1,18 @@
 # Developed by 3R3BOS
-from .nodes.visual_gatekeeper import VisualGatekeeper
+
 from .nodes.image_comparer_slider import ImageComparerSlider
+from .nodes.batch_selector import BatchSelector
 
 NODE_CLASS_MAPPINGS = {
-    "Visual Gatekeeper (3R3BOS)": VisualGatekeeper,
-    "Image Comparer (3R3BOS)": ImageComparerSlider
+
+    "Image Comparer (3R3BOS)": ImageComparerSlider,
+    "Batch Selector (3R3BOS)": BatchSelector
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "Visual Gatekeeper (3R3BOS)": "Visual Gatekeeper",
-    "Image Comparer (3R3BOS)": "Image Comparer Slider"
+
+    "Image Comparer (3R3BOS)": "Image Comparer Slider",
+    "Batch Selector (3R3BOS)": "Batch Selector"
 }
 
 WEB_DIRECTORY = "./js"
