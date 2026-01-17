@@ -81,24 +81,27 @@ app.registerExtension({
                 ctx.fillRect(x, y, cellW, cellH);
 
                 // Image Render
+                // Image Render
                 const img = this.images[i];
                 if (img && img.complete && img.width > 0) {
                     const imgRatio = img.width / img.height;
                     const cellRatio = cellW / cellH;
-                    let sx, sy, sw, sh;
+                    let dx, dy, dw, dh;
 
                     if (imgRatio > cellRatio) {
-                        sh = img.height;
-                        sw = img.height * cellRatio;
-                        sy = 0;
-                        sx = (img.width - sw) / 2;
+                        // Image is wider than cell -> fit width
+                        dw = cellW;
+                        dh = cellW / imgRatio;
+                        dx = x;
+                        dy = y + (cellH - dh) / 2;
                     } else {
-                        sw = img.width;
-                        sh = img.width / cellRatio;
-                        sx = 0;
-                        sy = (img.height - sh) / 2;
+                        // Image is taller than cell -> fit height
+                        dh = cellH;
+                        dw = cellH * imgRatio;
+                        dy = y;
+                        dx = x + (cellW - dw) / 2;
                     }
-                    ctx.drawImage(img, sx, sy, sw, sh, x, y, cellW, cellH);
+                    ctx.drawImage(img, 0, 0, img.width, img.height, dx, dy, dw, dh);
                 }
                 ctx.restore();
 
