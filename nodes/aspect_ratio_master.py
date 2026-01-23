@@ -1,4 +1,3 @@
-# Developed by 3R3BOS - Version 1.0.6 (Full 2026 Sync & No Deletion)
 import torch
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
