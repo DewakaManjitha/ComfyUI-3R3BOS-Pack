@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.0.3-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.0.4-blue?style=for-the-badge)
 ![Registry](https://img.shields.io/badge/Comfy_Registry-er3bos-black?style=for-the-badge&logo=comfyui)
 ![License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
 
@@ -21,7 +21,7 @@ Created to simplify complex interactions, this **evolving suite** brings profess
 
 ## 📦 The Collection
 
-This pack is designed to grow. Currently, it includes two core tools focused on UX and Efficiency.
+This pack is designed to grow. Currently, it includes three core tools focused on UX and Efficiency.
 
 ---
 
@@ -29,7 +29,7 @@ This pack is designed to grow. Currently, it includes two core tools focused on 
 **"Filter your generations like a Pro."**
 The Batch Selector replaces the need for complex preview-and-cancel workflows. It pauses execution, allowing you to visually select the best candidates from a batch before passing them downstream.
 
-#### 🎥 Selector Demo
+#### 🎥 Batch Selector Demo
 https://github.com/user-attachments/assets/a7475e56-9183-4be0-87c8-7816d6574f7c
 
 #### Features
@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/a7475e56-9183-4be0-87c8-7816d6574f7c
 *   **Workflow Control:** Includes a dedicated **CANCEL** button to instantly stop the workflow if the batch is unsatisfactory.
 
 > **Node Name:** `Batch Selector`
-> **Menu:** `3R3BOS`
+> **Menu:** `3R3BOS/Image`
 
 ---
 
@@ -47,15 +47,36 @@ https://github.com/user-attachments/assets/a7475e56-9183-4be0-87c8-7816d6574f7c
 **"The ultimate A/B testing tool."**
 A high-performance slider to compare Checkpoints, LoRAs, or "Before/After" Upscaling results with zero latency.
 
-#### 🎥 Slider Demo
+#### 🎥 Image Comparer Slider Demo
 https://github.com/user-attachments/assets/ebc723e3-692f-49ff-b843-7601d938e799
 
+#### Features
 *   **Dynamic Inputs:** Automatically creates up to 20 input slots as you connect wires.
 *   **Zero-Lag:** Client-side caching ensures 60fps scrubbing.
 *   **Auto-Compaction:** Smart inputs reorganize themselves if you disconnect a source.
 
 > **Node Name:** `Image Comparer Slider`
 > **Menu:** `3R3BOS/Image`
+
+---
+
+### 3. Aspect Ratio Master (Ultimate)
+**"The definitive resolution calculator."**
+Stop guessing resolutions. The Aspect Ratio Master provides a smart, visual interface to select the perfect resolution for any modern model (SDXL, Flux, Wan, LTX, etc.), guaranteeing adherence to specific VAE requirements (Mod16, Mod32, Mod64).
+
+#### 🎥 Aspect Ratio Master Demo
+https://github.com/user-attachments/assets/80087374-b33f-4037-830b-8e42a4efdd65
+
+#### Features
+*   **Smart Database (2026):** Native support for **Hunyuan 2.1 (2K)**, **Wan 2.2**, **Flux.2**, and **LTX Video**.
+*   **Magic Numbers:** Automatically calculates the exact pixel dimensions to avoid artifacts (e.g., Mod32 for LTX).
+*   **Visual Grid:** A beautiful, real-time preview of your aspect ratio and resolution.
+*   **Labs Mode 🧪:** Unlocks "Sweet Spot" resolutions used by the community for maximum quality (e.g., 1.5MP for Flux).
+
+> **Node Name:** `Aspect Ratio Master`
+> **Menu:** `3R3BOS/Utils`
+
+---
 
 <br>
 
@@ -82,6 +103,12 @@ git clone https://github.com/3R3BOS/ComfyUI-3R3BOS-Pack.git
 <br>
 
 ## Update Log
+
+### v1.0.4
+*   **NEW NODE:** Introduced **Aspect Ratio Master**. The ultimate tool for calculating optimal resolutions for SDXL, Flux, Wan, and LTX.
+*   **FULL SYNC:** Includes "Magic Numbers" for 2026 models (Hunyuan 2.1, Wan 2.2).
+*   **STABILITY:** Enforced strict Mod64/Mod32 constraints to prevent VAE artifacts.
+*   **BUGFIX:** Moved `Batch Selector` to the `3R3BOS/Image` menu category for better organization.
 
 ### v1.0.3
 *   **BUGFIX:** Batch Selector now correctly scales images using 'contain' mode, preventing edge cropping on non-square images (Fixes Issue #3).
