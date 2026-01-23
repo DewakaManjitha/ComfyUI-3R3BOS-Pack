@@ -50,7 +50,7 @@ class BatchSelector:
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("selected_images",)
     FUNCTION = "select_batch"
-    CATEGORY = "3R3BOS"
+    CATEGORY = "3R3BOS/Image"
     OUTPUT_NODE = True
 
     def select_batch(self, images, unique_id):
